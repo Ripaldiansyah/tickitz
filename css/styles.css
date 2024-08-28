@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Mulish", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+.font-inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.description {
+    font-size: medium;
+    color: #AAAAAA;
+}
+
+.brand-description {
+    margin: auto;
+    text-align: center;
+    font-size: 3vw;
+    color: #ffffff;
+}
+
+a {
+    color: #5F2EEA;
+}
+
+
+.footer {
+    font-size: 0.875rem;
+    text-align: center;
+    color: #AAAAAA;
+    margin-top: 10px;
+}
+
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.container-left {
+    display: grid;
+    flex: 2;
+    background-image: url("/images/png/banner.png");
+    background-position: center;
+    background-repeat: repeat;
+}
+
+
+.container-right {
+    flex: 1;
+    margin: 50px;
+}
+
+
+.form-control {
+    display: grid;
+    margin-top: 30px;
+    row-gap: 5px;
+}
+
+.logo-purple {
+    width: 85px;
+    height: 33px;
+    visibility: hidden;
+}
+
+input {
+    border-radius: 12px;
+    border: 1px solid #DEDEDE;
+    height: 32px;
+    padding: 10px 10px 10px 20px;
+}
+
+input:hover, input:focus {
+    border: 1px solid #5F2EEA;
+    outline: none;
+}
+
+form label {
+    color: #4E4B66;
+    margin-top: 12px;
+}
+
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.password-container span {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: #5F2EEA;
+    height: 52px;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.btn-primary-outline {
+    background: #ffffff;
+    color: #5F2EEA;
+    border: 1px solid #5F2EEA;
+}
+
+.login {
+    margin: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.logo-banner {
+    width: 35vw;
+    height: 20vh;
+}
+
+.navigation {
+    display: flex;
+    margin: 20px;
+    position: sticky;
+    top: -10px;
+}
+
+.p-100 {
+    padding-bottom: 1000px;
+
+}
+
+@media (max-width: 640px) {
+    .container-left {
+        position: absolute;
+        left: -9999px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 0.875rem;
+    }
+
+    .container-right {
+        margin-top: 40px;
+    }
+
+    .header {
+        margin-top: 30px;
+    }
+
+
+    input {
+        border-radius: 6px;
+    }
+
+    .logo-purple {
+        visibility: visible;
+    }
+}
+
+@media (min-width: 641px) {
+    .text-medium {
+        font-size: 0.875rem;
+    }
+
+    .container-right {
+        flex: 0.7;
+        margin-top: 40px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 0.875rem;
+    }
+
+    .container-left {
+        flex: 1;
+    }
+
+    .header {
+        margin-top: 50px;
+    }
+
+
+    .brand-description {
+        font-size: 3vw;
+    }
+
+    .logo-banner {
+        width: 35vw;
+        height: 10vh;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .text-medium {
+        font-size: 0.875rem;
+    }
+
+    .container-right {
+        flex: 0.7;
+        margin-top: 40px;
+    }
+
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .description {
+        font-size: 0.875rem;
+    }
+
+    .container-left {
+        flex: 1;
+    }
+
+    .header {
+        margin-top: 50px;
+    }
+
+
+    .brand-description {
+        font-size: 3vw;
+    }
+
+    .logo-banner {
+        width: 30vw;
+        height: 20vh;
+    }
+}
+
+
+
+
+
+
