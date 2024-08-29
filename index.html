@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Sign In | TICKITZ</title>
+    <title>Home | TICKITZ</title>
     <link href="css/styles.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com" rel="preconnect"/>
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -14,48 +14,157 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
           rel="stylesheet"/>
 </head>
-<body>
-<main>
-    <div class="container">
-        <div class="container-left">
-            <div class="brand-description">
-                <div><img alt="logo tickitz" class="logo-banner" src="images/png/logo.png"/></div>
-                <p class="font-inter">wait, watch, wow!</p>
+<body class="home">
+<header>
+    <nav class="navigation">
+        <img alt="" class="logo-purple ml-20" src="assets/images/logo-purple.png">
+        <img alt="" class="menu-icons" src="assets/icons/gg_menu-right-alt.png">
+        <div id="menuLinks">
+            <a href="">Home</a>
+            <a href="">List Movie</a>
+            <a href="">Sign in</a>
+            <p>© 2024 Tickitz. All Rights Reserved.</p>
+
+        </div>
+        <div class="bg-white-with-opacity"></div>
+
+    </nav>
+</header>
+
+<main class="main-content">
+    <section class="hero-section">
+        <div class="hero-title">
+            <p>Nearest Cinema, Newest Movie, </p>
+            <span>Find out now!</span>
+        </div>
+        <div class="hero-item">
+            <img class="hero-image mt-40" src="assets/images/banner1.jpg">
+            <img class="hero-image mt-20" src="assets/images/banner2.jpg">
+            <img class="hero-image" src="assets/images/banner3.jpg">
+        </div>
+    </section>
+
+    <section class="now-showing-section">
+        <div class="now-showing-title">
+            <p>Now Showing</p>
+            <a href="">view all</a>
+        </div>
+
+        <div class="card-control">
+            <div class="card-container ">
+                <img class="card-image" src="assets/images/banner1.jpg">
+                <p class="film-title">Acardian</p>
+                <p class="film-genres">Monster Horror, Action, Drama, horror, Sci-fi Thriller </p>
+                <button class="btn-primary-outline btn-detail">Details</button>
+
+            </div>
+            <div class="card-container">
+                <img class="card-image" src="assets/images/banner2.jpg">
+                <p class="film-title">Kaka Boss</p>
+                <p class="film-genres">Comedy, Drama</p>
+                <button class="btn-primary-outline btn-detail">Details</button>
+            </div>
+            <div class="card-container">
+                <img class="card-image" src="assets/images/banner3.jpg">
+                <p class="film-title">Deadpool & Wolverine</p>
+                <p class="film-genres">Action, Adventure, Comedy, Sci-Fi</p>
+                <button class="btn-primary-outline btn-detail">Details</button>
             </div>
         </div>
-        <div class="container-right login">
-            <img alt="logo tickitz" class="logo-purple" src="images/png/logo-purple.png">
-            <div class="header">
-                <h2 class="font-inter title">Sign In</h2>
-                <p class="font-inter description">Sign in with your data that you entered during
-                    your registration</p>
+    </section>
+
+    <section class="upcoming-movies-section">
+        <div class="upcoming-movies-title">
+            <p class="bold">Upcoming movies</p>
+            <a href="">view all</a>
+        </div>
+
+        <div class="button-control">
+            <button class="btn-month">August</button>
+            <button class="btn-primary-outline btn-month">September</button>
+            <button class="btn-primary-outline btn-month">October</button>
+            <button class="btn-primary-outline btn-month">November</button>
+            <button class="btn-primary-outline btn-month">December</button>
+            <button class="btn-primary-outline btn-month">January</button>
+            <button class="btn-primary-outline btn-month">February</button>
+            <button class="btn-primary-outline btn-month">March</button>
+            <button class="btn-primary-outline btn-month">April</button>
+            <button class="btn-primary-outline btn-month">May</button>
+            <button class="btn-primary-outline btn-month">June</button>
+            <button class="btn-primary-outline btn-month">July</button>
+        </div>
+
+        <div class="card-control">
+            <div class="card-container card-container-full">
+                <img class="card-image" src="assets/images/banner1.jpg">
+                <p class="film-title">Acardian</p>
+                <p class="film-genres">Monster Horror, Action, Drama, horror, Sci-fi Thriller </p>
+                <button class="btn-primary-outline btn-detail">Details</button>
             </div>
-            <div>
-                <form action="" class="form-control">
-                    <label for="email">Email</label>
-                    <input id="email" placeholder="Write your email" type="email">
-                    <label for="password">Password</label>
+            <div class="card-container card-container-full">
+                <img class="card-image" src="assets/images/banner2.jpg">
+                <p class="film-title">Kaka Boss</p>
+                <p class="film-genres">Comedy, Drama</p>
+                <button class="btn-primary-outline btn-detail">Details</button>
+            </div>
+            <div class="card-container card-container-full">
+                <img class="card-image" src="assets/images/banner3.jpg">
+                <p class="film-title">Deadpool & Wolverine</p>
+                <p class="film-genres">Action, Adventure, Comedy, Sci-Fi</p>
+                <button class="btn-primary-outline btn-detail">Details</button>
+            </div>
+        </div>
+    </section>
 
-                    <div class="password-container">
-                        <input id="password" placeholder="Write your password" type="password">
-                        <span class="material-symbols-outlined">Visibility</span>
-                    </div>
-                    <button class="btn-primary">Sign in</button>
-                </form>
+    <section class="join-member">
+        <div class="member-container">
+            <p class="join-member-title">Be the vanguard of the </p>
+            <p class="text-color-primary text-xxl bold mb-30"> Moviegoers</p>
+            <input class="w-100 mw-300" placeholder="Type your email " type="text">
+            <button class="btn-primary btn-join">Join Now</button>
 
+            <p class="join-member-description">By joining you as a Tickitz member,</p>
+            <p class="join-member-description">we will always send you the latest
+                updates via email .</p>
 
-                <p class=" font-inter footer mt-30">
-                    Forgot your password?
-                    <a href=""> Reset now</a>
-                </p>
-                <p class="font-inter footer">
-                    Don’t have an account?
-                    <a href="sign-up.html">Sign Up</a>
-                </p>
+        </div>
+    </section>
 
+</main>
+
+<footer>
+    <div class="footer-home">
+        <div class="company-footer">
+            <img alt="logo-tickitz" class="logo-purple-footer " src="assets/images/logo-purple.png">
+            <p>Stop waiting in line. Buy tickets conveniently, watch movies quietly.</p>
+        </div>
+        <div class="explore-footer">
+            <p>Explore</p>
+            <div class="item-explore">
+                <a>Home</a>
+                <a>List Movie</a>
+            </div>
+        </div>
+        <div class="sponsor">
+            <p>Our Sponsor</p>
+            <div class="our-sponsor">
+                <img src="assets/images/sponsor/ebu.id.png">
+                <img src="assets/images/sponsor/CineOne21.png">
+                <img src="assets/images/sponsor/hiflix.png">
+            </div>
+        </div>
+        <div>
+            <p>Follow us</p>
+            <div class="social-media">
+                <img alt="" src="assets/icons/eva_facebook-outline.png">
+                <img alt="" src="assets/icons/bx_bxl-instagram.png">
+                <img alt="" src="assets/icons/eva_twitter-outline.png">
+                <img alt="" src="assets/icons/feather_youtube.png">
             </div>
         </div>
     </div>
-</main>
+
+
+</footer>
 </body>
 </html>
