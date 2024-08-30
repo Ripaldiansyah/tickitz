@@ -38,7 +38,6 @@
     color: #5F2EEA;
     font-size: 35px;
     font-weight: bolder;
-
 }
 
 .hero-section {
@@ -95,17 +94,24 @@
 
 
 .button-control {
+    padding-bottom: 20px;
     display: flex;
-    margin: 0px 0px 30px 20px;
     justify-content: start;
     flex-wrap: nowrap;
     column-gap: 10px;
 }
 
+.scroller-control {
+    margin: 0px 0px 30px 20px;
+    scrollbar-width: thin;
+    scrollbar-color: #5F2EEA #f1f1f1;
+    overflow-x: scroll;
+}
+
 
 .card-control {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .card-container {
@@ -128,17 +134,12 @@
 }
 
 .card-container-full {
-    height: 250px;
     overflow: visible;
     background-color: rgba(255, 255, 255, 1);
     border: 1px solid #DEDEDE;
-
 }
 
 .card-image {
-    /*min-width: 55px;*/
-    /*width: 22vw;*/
-    /*max-width: 95px;*/
     width: 95px;
     height: 130px;
     border-radius: 6px;
@@ -160,11 +161,15 @@
     border-radius: 4px;
 }
 
+.member-container input, .member-container button {
+    border-radius: 3px;
+}
+
+
 .join-member-title {
     color: #4E4B66;
     font-size: 18px;
     margin-bottom: -10px;
-
 }
 
 .join-member-description {
@@ -177,6 +182,7 @@
 .upcoming-movies-section {
     width: 100%;
     height: 500px;
+    margin-bottom: 40px;
     overflow-x: clip;
 }
 
@@ -204,6 +210,11 @@
     background: #5f2eea;
     color: #ffffff;
     border: none;
+}
+
+.title-social-control {
+    display: flex;
+    column-gap: 10px;
 }
 
 .btn-detail {
@@ -284,6 +295,10 @@ a {
     height: 100vh;
 }
 
+.copyright {
+    margin: 0px 0px 20px 20px;
+}
+
 
 .mt-10 {
     margin-top: 10px;
@@ -356,23 +371,32 @@ a {
     visibility: hidden;
 }
 
+.logo-purple-header {
+    visibility: visible;
+}
+
 
 .logo-purple-footer {
     width: 20vh;
     max-width: 300px;
 }
 
+.social-media-control {
+    margin-top: 10px;
+}
 
 .footer-home {
     margin: 50px 20px 30px 20px;
+    width: 80vw;
+
 }
 
 .company-footer {
     display: grid;
     width: 300px;
     color: #6E7191;
-
 }
+
 
 .explore-footer {
     margin: 30px 0px 30px 0px;
@@ -392,14 +416,13 @@ a {
 }
 
 .sponsor {
-    margin: 30px 0px 30px 0px;
+    margin-top: 10px;
 }
 
 .our-sponsor {
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
-    width: 380px;
 }
 
 .social-media {
@@ -523,8 +546,51 @@ form label {
     cursor: pointer;
 }
 
-@media (max-width: 640px) {
+.btn-navigation {
+    position: absolute;
+    top: -2px;
+    cursor: pointer;
+    border-radius: 3px;
+}
 
+.position-absolute {
+    position: absolute;
+}
+
+.navigation-control {
+    width: 200px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    top: -5px;
+}
+
+.navigation-control a {
+    border-bottom: none;
+}
+
+
+@media (max-width: 640px) {
+    .btn-navigation, .navigation-control {
+        display: none;
+    }
+
+    .member-container input {
+        max-width: 250px;
+    }
+
+    .member-container button {
+        max-width: 300px;
+    }
+
+
+    .title-social-control span {
+        display: none;
+    }
+
+    .footer-description {
+        font-size: 16px
+    }
 
     .container-left {
         position: absolute;
@@ -554,11 +620,180 @@ form label {
     .logo-purple {
         visibility: visible;
     }
+
+    .card-container-full {
+        width: 120px;
+        height: 250px;
+    }
 }
 
 @media (min-width: 641px) {
+    .footer-description {
+        font-size: 1.5vw;
+    }
+
+
+    .join-member {
+        height: 300px;
+        margin-left: 60px;
+        margin-right: 15px;
+    }
+
+    .join-member-title {
+        font-size: 22px;
+    }
+
+    .card-image {
+        width: 140px;
+        height: 160px;
+    }
+
+    .member-container button {
+        width: 120px;
+        border-radius: 5px;
+        margin-left: 4px;
+    }
+
+    .member-container input {
+        width: 250px;
+        border-radius: 5px;
+        margin-left: 4px;
+    }
+
+
+    .btn-detail {
+        width: 90%;
+        height: 10%;
+        font-size: 13px;
+    }
+
+    .upcoming-movies-title a, .now-showing-title a {
+        margin-right: 15px;
+        font-size: 13px;
+    }
+
+    .card-container {
+        width: 160px;
+        height: 180px;
+        margin: 0px 0px 20px 20px;
+    }
+
+
+    .card-container:hover {
+        width: 160px;
+        height: 300px;
+    }
+
+    .card-container-full {
+        width: 160px;
+        height: 300px;
+    }
+
+    .upcoming-movies-section {
+        height: 600px;
+    }
+
+
+    .now-showing-section {
+        height: 350px;
+    }
+
     .text-medium {
         font-size: 0.875rem;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+    .explore-footer, .sponsor, .social-media-control {
+        margin-left: 1.5rem;
+        margin-top: 10px;
+        font-size: 1.7vw;
+    }
+
+    .sponsor {
+        margin-left: -120px;
+    }
+
+    .footer-home {
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hero-section {
+        display: flex;
+        margin: 50px 10vw 0px 60px;
+        justify-content: space-between;
+    }
+
+    .btn-navigation {
+        right: 50px;
+        width: 80px;
+        height: 40px;
+    }
+
+    .social-media {
+        display: grid;
+        row-gap: 10px;
+        margin-top: 20px;
+    }
+
+    .item-explore {
+        display: grid;
+        row-gap: 10px;
+        margin-top: 20px;
+    }
+
+    .our-sponsor {
+        display: grid;
+        row-gap: 15px;
+    }
+
+    .our-sponsor img {
+        width: 7vw;
+        max-width: 100px;
+    }
+
+    .title-social-control img {
+        width: 2vw;
+        max-width: 20px;
+    }
+
+    .hero-title {
+        margin-top: 10%;
+        font-size: 20px;
+    }
+
+    .hero-title span {
+        font-size: 45px;
+        font-weight: bolder;
+    }
+
+    .navigation-control {
+        left: 200px;
+    }
+
+    .logo-purple-header {
+        width: 90px;
+        height: 35px;
+        margin-left: 60px;
+    }
+
+    .now-showing-title, .card-control, .upcoming-movies-title, .scroller-control {
+        margin-left: 40px;
+    }
+
+
+    .btn-month {
+        margin-left: 20px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .menu-icons {
+        display: none;
     }
 
     .container-right {
@@ -590,20 +825,144 @@ form label {
         width: 35vw;
         height: 10vh;
     }
+
+    .footer-home {
+        margin: 10vh 100px 30px 70px;
+    }
+
+    .logo-purple-footer {
+        width: 17vw;
+        max-width: 200px;
+    }
 }
 
 @media (min-width: 1024px) {
+    .card-container {
+        width: 180px;
+        height: 200px;
+        margin: 0px 0px 20px 30px;
+    }
+
+    .card-image {
+        width: 160px;
+        height: 180px;
+    }
+
+    .btn-detail {
+        width: 90%;
+        height: 12%;
+        font-size: 15px;
+    }
+
     .btn-month {
-        flex: unset;
+        height: 50px;
+        font-size: 15px;
+    }
+
+    .card-container:hover {
+        width: 180px;
+        height: 350px;
+    }
+
+    .join-member-title {
+        font-size: 24px;
+    }
+
+    .member-container button {
+        width: 150px;
+        border-radius: 5px;
+        margin-left: 4px;
+    }
+
+    .member-container input {
+        width: 300px;
+        border-radius: 5px;
+        margin-left: 4px;
+    }
+
+    .join-member {
+        height: 350px;
+        margin-left: 100px;
+        margin-right: 60px;
+    }
+
+    .card-container-full {
+        width: 180px;
+        height: 350px;
+    }
+
+    .upcoming-movies-section {
+        height: 700px;
+    }
+
+    .now-showing-section {
+        height: 400px;
+    }
+
+    .footer-home {
+        margin-top: 20vh;
+    }
+
+    .explore-footer, .sponsor, .social-media-control {
+        font-size: 16px;
+    }
+
+    .footer-description {
+        font-size: 1.2vw;
+    }
+
+    .navigation-control {
+        top: -5px;
+        left: 300px;
+    }
+
+    .now-showing-title, .card-control, .upcoming-movies-title, .scroller-control {
+        margin-left: 80px;
+
+    }
+
+
+    .upcoming-movies-title a, .now-showing-title a {
+        margin-right: 65px;
+        font-size: 15px;
+    }
+
+    .upcoming-movies-title p {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+
+    .btn-navigation {
+        right: 100px;
+        width: 120px;
+        height: 40px;
+    }
+
+    .hero-section {
+        margin-left: 100px;
     }
 
     .text-medium {
         font-size: 0.875rem;
     }
 
+    .logo-purple-header {
+        width: 120px;
+        height: 45px;
+        margin-left: 100px;
+    }
+
+
     .container-right {
         flex: 0.7;
         margin-top: 40px;
+    }
+
+
+    .hero-title span {
+        font-size: 50px;
+        font-weight: bolder;
     }
 
     .title {

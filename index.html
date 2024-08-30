@@ -17,7 +17,13 @@
 <body class="home">
 <header>
     <nav class="navigation">
-        <img alt="" class="logo-purple ml-20" src="assets/images/logo-purple.png">
+        <img alt="" class="logo-purple logo-purple-header ml-20" src="assets/images/logo-purple.png">
+        <div class=" position-absolute navigation-control">
+            <a>Home</a>
+            <a>List Movie</a>
+        </div>
+
+        <button class="btn-primary btn-navigation">Sign up</button>
         <img alt="" class="menu-icons" src="assets/icons/gg_menu-right-alt.png">
         <div id="menuLinks">
             <a href="">Home</a>
@@ -34,8 +40,11 @@
 <main class="main-content">
     <section class="hero-section">
         <div class="hero-title">
-            <p>Nearest Cinema, Newest Movie, </p>
-            <span>Find out now!</span>
+            <div>
+                <p>Nearest Cinema, Newest Movie, </p>
+                <span>Find out now!</span>
+            </div>
+
         </div>
         <div class="hero-item">
             <img class="hero-image mt-40" src="assets/images/banner1.jpg">
@@ -78,21 +87,23 @@
             <p class="bold">Upcoming movies</p>
             <a href="">view all</a>
         </div>
-
-        <div class="button-control">
-            <button class="btn-month">August</button>
-            <button class="btn-primary-outline btn-month">September</button>
-            <button class="btn-primary-outline btn-month">October</button>
-            <button class="btn-primary-outline btn-month">November</button>
-            <button class="btn-primary-outline btn-month">December</button>
-            <button class="btn-primary-outline btn-month">January</button>
-            <button class="btn-primary-outline btn-month">February</button>
-            <button class="btn-primary-outline btn-month">March</button>
-            <button class="btn-primary-outline btn-month">April</button>
-            <button class="btn-primary-outline btn-month">May</button>
-            <button class="btn-primary-outline btn-month">June</button>
-            <button class="btn-primary-outline btn-month">July</button>
+        <div class="scroller-control">
+            <div class="button-control">
+                <button class="btn-month">August</button>
+                <button class="btn-primary-outline btn-month">September</button>
+                <button class="btn-primary-outline btn-month">October</button>
+                <button class="btn-primary-outline btn-month">November</button>
+                <button class="btn-primary-outline btn-month">December</button>
+                <button class="btn-primary-outline btn-month">January</button>
+                <button class="btn-primary-outline btn-month">February</button>
+                <button class="btn-primary-outline btn-month">March</button>
+                <button class="btn-primary-outline btn-month">April</button>
+                <button class="btn-primary-outline btn-month">May</button>
+                <button class="btn-primary-outline btn-month">June</button>
+                <button class="btn-primary-outline btn-month">July</button>
+            </div>
         </div>
+
 
         <div class="card-control">
             <div class="card-container card-container-full">
@@ -121,7 +132,7 @@
             <p class="join-member-title">Be the vanguard of the </p>
             <p class="text-color-primary text-xxl bold mb-30"> Moviegoers</p>
             <input class="w-100 mw-300" placeholder="Type your email " type="text">
-            <button class="btn-primary btn-join">Join Now</button>
+            <button class="btn-primary btn-join ">Join Now</button>
 
             <p class="join-member-description">By joining you as a Tickitz member,</p>
             <p class="join-member-description">we will always send you the latest
@@ -135,8 +146,10 @@
 <footer>
     <div class="footer-home">
         <div class="company-footer">
-            <img alt="logo-tickitz" class="logo-purple-footer " src="assets/images/logo-purple.png">
-            <p>Stop waiting in line. Buy tickets conveniently, watch movies quietly.</p>
+            <div>
+                <img alt="logo-tickitz" class="logo-purple-footer " src="assets/images/logo-purple.png">
+                <p class="footer-description">Stop waiting in line. Buy tickets conveniently, watch movies quietly.</p>
+            </div>
         </div>
         <div class="explore-footer">
             <p>Explore</p>
@@ -153,18 +166,35 @@
                 <img src="assets/images/sponsor/hiflix.png">
             </div>
         </div>
-        <div>
+        <div class="social-media-control">
             <p>Follow us</p>
             <div class="social-media">
-                <img alt="" src="assets/icons/eva_facebook-outline.png">
-                <img alt="" src="assets/icons/bx_bxl-instagram.png">
-                <img alt="" src="assets/icons/eva_twitter-outline.png">
-                <img alt="" src="assets/icons/feather_youtube.png">
+                <div class="title-social-control">
+                    <img alt="" src="assets/icons/eva_facebook-outline.png">
+                    <span class="text-color-placeholder ">Tickitz Cinema id</span>
+                </div>
+
+                <div class="title-social-control">
+                    <img alt="" src="assets/icons/bx_bxl-instagram.png">
+                    <span class="text-color-placeholder">tickitz.id</span>
+                </div>
+
+                <div class="title-social-control">
+                    <img alt="" src="assets/icons/eva_twitter-outline.png">
+                    <span class="text-color-placeholder">tickitz.id</span>
+                </div>
+
+                <div class="title-social-control">
+                    <img alt="" src="assets/icons/feather_youtube.png">
+                    <span class="text-color-placeholder">Tickitz Cinema id</span>
+                </div>
+
             </div>
         </div>
     </div>
 
 
+    <p class="text-color-placeholder copyright">© 2024 Tickitz. All Rights Reserved.</p>
 </footer>
 </body>
 </html>
