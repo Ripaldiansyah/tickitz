@@ -28,7 +28,7 @@
 }
 
 .hero-title {
-    display: grid;
+    display: flex;
     color: #A0A3BD;
     font-weight: 400;
     font-size: 14px;
@@ -41,25 +41,27 @@
 }
 
 .hero-section {
-    display: grid;
-    margin: 50px 0px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 20px 0px 20px;
     row-gap: 20px;
 }
 
 .hero-item {
     display: flex;
-    justify-items: start;
+    justify-content: space-between;
     column-gap: 20px;
 }
 
 .hero-image {
     border-radius: 10px;
-    height: 30vh;
+    height: 40vh;
     width: 25vw;
-    max-width: 100px;
+    max-width: 180px;
     object-fit: cover;
     object-position: center;
     box-shadow: 8px 10px 30px rgba(0, 0, 0, 0.3);
+
 }
 
 .now-showing-section {
@@ -629,6 +631,14 @@ form label {
 }
 
 @media (min-width: 641px) {
+
+    .hero-image {
+        height: 30vh;
+        width: 25vw;
+        max-width: 100px;
+        object-fit: cover;
+    }
+
     .btn-join {
         width: 240px;
         font-size: 18px;
@@ -730,9 +740,9 @@ form label {
     }
 
     .hero-section {
-        display: flex;
         margin: 50px 10vw 0px 60px;
         justify-content: space-between;
+        flex-direction: row;
     }
 
     .btn-navigation {
